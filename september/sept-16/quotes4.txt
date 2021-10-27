@@ -1,0 +1,6 @@
+"Premature optimization is the root of all evil (or at least most of it) in programming."-- Donald Knuth
+"Keep away from people who try to belittle your ambitions. Small people always do that, but the really great make you feel that you, too, can become great."-- Mark Twain
+"There really is no learning without doing."-- Roger Schank
+"Everything should be made as simple as possible, but no simpler."-- Albert Einstein
+"A charlatan makes obscure what is clear; a thinker makes clear what is obscure."-- Hugh Kingsmill
+"Life moves pretty fast. If you don't stop and look around once in a while, you could miss it."-- Ferris Bueller

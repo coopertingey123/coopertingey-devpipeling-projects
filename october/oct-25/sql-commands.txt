@@ -1,0 +1,20 @@
+Exercises for SQL:
+1. Find a customer email dyarnold8@luckyduck.co and update it to say
+dylanarnold8@luckyduck.com
+2. Update every product with a price of 999.99 to 997.97
+3. Pro-Series 49-Class Full HD Outdoor LED TV (Silver) is on sale! 
+Take 32% off the price.
+4. Find the product_id for “Alpine - 6-1/2 2-Way Component Car 
+Speakers with Poly-Mica Cones (Pair) - Black”. Then, in the Customer_Orders
+ table, update any order containing the car speakers product_id to the 
+ product_id 694. Lastly, give product 694 a price increase of 10%.
+
+ product_id = 649
+
+update Customer_Orders
+SET product_id = 694
+WHERE product_id = 649
+
+update Products
+SET price = price * 1.1
+WHERE product_id = 694

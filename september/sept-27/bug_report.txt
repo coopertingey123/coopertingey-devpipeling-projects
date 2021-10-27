@@ -1,0 +1,78 @@
+Bug Report
+---------------------------
+Structure of an Excellent Bug Report
+When writing a bug report, the following information, or at least most of the following information, should be included:
+
+Bug ID
+Bug Summary/Description
+Bug Details
+Bug Severity
+Steps to Reproduce
+Attachments / Screenshots
+1. Bug ID
+In development environments where there are multiple projects being developed at the same time, it is helpful to have a 
+descriptive Bug ID that tells exactly which project, and perhaps which version of the software, the bug was discovered in.
+
+For example, if the project were called GeoTagger and we had two versions, one for the Web and one for Mobile, we might 
+include a short code to indicate which we are referring to.
+
+Bad Bug ID: 112 or Broken-stuff-01
+
+Good Bug ID: GT-WEB-145 or GT-MOB-001
+
+2. Bug Summary
+In some issue tracking tools, the Summary might be the title. The summary might be considered the main part of the bug 
+report and it should be short and descriptive.
+
+A good summary or title would include the part of the application where the issue occurs and a short summary of the issue. 
+For example:
+
+Bad Summary: "This page has a problem!"
+
+Good Summary: "On the User Detail page, there is a blue box on the lower-left of the screen" or "Layout issue on the 
+Organization List page"
+
+3. Bug Details
+This should include more details about the bug, the platform and the software version number on which the bug occurred.
+Some details to include in the Bug Details:
+
+The version number of the software, like 2.04.1
+The domain or URL of the website or page where the error occurred, if it is a website or web app.
+The browser name and version
+The operating system of the computer that experienced the bug
+If these details are not included, then the QA testers or developers may be testing on the wrong environment and 
+close the bug without fixing it due to "Unable to Replicate".
+
+4. Bug Severity
+Bug severity is a measure of the impact this bug on the application or the users' experience while using the application. 
+Severity is generally measured in some scale like low to crtical:
+
+Low is usually a cosmetic bug like a misspelled word or an incorrect color on a button.
+Critical bugs prevent the application, or parts of the application from functioning, like a database connection error, 
+or the inability to login.
+Knowing the severity of a bug helps the development managers prioritize the fixing of the bugs.
+
+5. Steps to Reproduce
+Perhaps the most important part of an effective bug report is the steps to reproduce. If a developer cannot 
+reproduce an error, then they will have a really hard time fixing it.
+
+This section should include as much detail as possible to help someone who wasn't watching the error occur to be 
+able to create the scenario when the issue will reoccur.
+
+Included in the section should be information like:
+
+The page, website, environment used
+The actions taken to produce the bug
+The data used when filling form fields or calling API endpoints
+Actual results that occurred
+Expected results
+Attachments and/or screenshots
+6. Attachments / Screenshots
+It is said that a picture is worth a thousand words. That is especially true if you are trying to help someone 
+understand how a bug can be preproduced. If helpful and available, screenshots can help the developers quickly see 
+what is happening.
+
+If providing a bug report for a network or API call, the actual JSON or other data sent can also be extremely helpful, 
+especially if, for some reason, the data was sent improperly. This can help shortcut problems in the data sent as well 
+as to help identify where the application can be improved.
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/14802/Downloads/dp_customers (5).db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="125"/><column_width id="3" width="2350"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,15:mainCustomer_Orders"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Customer_Orders" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="87"/><column index="2" value="65"/><column index="3" value="90"/><column index="4" value="80"/><column index="5" value="65"/><column index="6" value="129"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Products" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="80"/><column index="2" value="300"/><column index="3" value="194"/><column index="4" value="219"/><column index="5" value="53"/></column_widths><filter_values><column index="2" value="Alpine"/></filter_values><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">update Customer_Orders
+SET product_id = 694
+WHERE product_id = 649;
+
+</sql><sql name="SQL 2">update Products
+SET price = price * 1.1
+WHERE product_id = 694;</sql><sql name="SQL 3">INSERT INTO Customers
+(customer_id, name, street_address, city, state, postal_code, phone, email)
+VALUES
+(88, 'Fake Company', '1234 Seseme Street', 'San Francisco', 'CA', '94016', '555-222-3333', 'fakeperson@fakecompany.com')</sql><sql name="SQL 4">update Customers
+set active = 0
+WHERE customer_id = 88</sql><sql name="SQL 5">Insert into Customer_Orders
+(order_id)
+VALUES
+(920)
+</sql><sql name="SQL 6">update Customer_Orders
+set active=0
+where order_id=920</sql><sql name="SQL 7">update Products
+SET active = 0
+WHERE price &lt; 5.00</sql><current_tab id="6"/></tab_sql></sqlb_project>
