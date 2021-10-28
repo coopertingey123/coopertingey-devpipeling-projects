@@ -83,6 +83,15 @@ even(numbers)
 # color_list_1 = set(["White", "Black", "Red"])
 # color_list_2 = set(["Red", "Green"])
 
+def compare_lists(list1, list2):
+    colors = []
+    for color in list1:
+        if color in list2:
+            continue
+        else:
+            colors.append(color)
+
+
 # Write a Python program to sum of three given integers. However, if two values are equal sum will be zero
 
 # Write a Python program to add two objects if both objects are an integer type
