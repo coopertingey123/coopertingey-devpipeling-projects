@@ -1,0 +1,2 @@
+ALTER TABLE Vehicles 
+RENAME COLUMN Miles TO miles
